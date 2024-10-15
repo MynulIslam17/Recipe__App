@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_marginHorizontal="10dp"
+    android:background="@drawable/card_back_btn"
+    android:id="@+id/itemBody">
+
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      app:cardCornerRadius="20dp"
+      app:cardElevation="10dp"
+      android:layout_marginVertical="12dp"
+      >
+
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:src="@drawable/pizza_sample"
+          android:scaleType="centerCrop"
+          android:background="@drawable/card_back_btn"
+          android:id="@+id/searchFoodImage"
+          />
+
+  </androidx.cardview.widget.CardView>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Spicy coconut grilled clicken color more int "
+        android:textSize="16sp"
+        android:fontFamily="@font/popainlight"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:paddingLeft="14dp"
+        android:layout_gravity="center"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:id="@+id/searchFoodName"
+        />
+
+
+
+
+
+</LinearLayout>

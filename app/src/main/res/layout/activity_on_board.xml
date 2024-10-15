@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnBoardActivity"
+    android:background="#a3b18a">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:fontFamily="@font/popins4"
+        android:textSize="19sp"
+        android:layout_alignParentEnd="true"
+        android:padding="12dp"
+        android:textColor="#fff"
+        android:foreground="?attr/selectableItemBackground"
+        android:id="@+id/skip"
+        android:clickable="true"
+        />
+
+
+
+
+  <androidx.viewpager2.widget.ViewPager2
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/viewpager"
+      android:layout_weight="4"
+      android:layout_below="@id/skip"
+
+      android:layout_above="@id/bottomPart"
+
+      />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomPart"
+        android:layout_alignParentBottom="true"
+
+        >
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/popains3"
+            android:foreground="?attr/selectableItemBackground"
+            android:text=" Next "
+            android:textColor="#F8F8F8"
+            android:textSize="19sp"
+            android:background="@drawable/next_btn"
+            android:layout_alignParentEnd="true"
+            android:clickable="true"
+            android:gravity="center"
+
+
+            />
+
+
+        <TextView
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/popains3"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="GET STARTED"
+            android:textColor="#FFF"
+            android:textSize="19sp"
+            android:background="@drawable/start_btn"
+            android:layout_alignParentEnd="true"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="13dp"
+            android:clickable="true"
+android:visibility="gone"
+
+            />
+
+
+       <LinearLayout
+           android:layout_width="150dp"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:id="@+id/layDots"
+           android:layout_marginLeft="15dp"
+         />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

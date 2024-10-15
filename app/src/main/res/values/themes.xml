@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.RecipeApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/purple700</item>
+    </style>
+
+    <style name="Theme.RecipeApp" parent="Base.Theme.RecipeApp" />
+
+    <!-- Custom theme for your specific activity -->
+    <style name="CustomStatusBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Set the color of the status bar -->
+        <item name="android:statusBarColor">@color/deepblue</item>
+
+        <!-- Ensure icons are readable (dark or light status bar) -->
+        <item name="android:windowLightStatusBar">false</item> <!-- true for dark icons, false for light icons -->
+    </style>
+
+
+</resources>

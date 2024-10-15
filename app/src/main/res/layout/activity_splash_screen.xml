@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen"
+    android:background="@color/white">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:lottie_rawRes="@raw/recipe2anim"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_centerInParent="true"/>
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/animationView"
+        android:gravity="center"
+        android:text="Instant Recipe "
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:id="@+id/tvAppName"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="8dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Made IN 🇧🇩 "
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_below="@id/tvAppName"
+        android:id="@+id/tvMade"/>
+
+
+
+
+
+</RelativeLayout>

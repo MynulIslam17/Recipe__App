@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+    <!--header part-->
+
+    <ImageView
+        android:id="@+id/itemImage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#F6F6F6"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mainndish"
+        android:tag="crop" />
+
+    <ImageView
+        android:id="@+id/backToPrevious"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/card_back_btn"
+        android:src="@drawable/back_icon"
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:hapticFeedbackEnabled="true"
+        />
+
+    <ImageView
+        android:id="@+id/zoomImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+       android:layout_marginTop="25sp"
+        android:layout_marginRight="19dp"
+        android:src="@drawable/full_size_ic"
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true"
+
+        />
+
+<!-- end-->
+  
+    <!--food details and cooking process part start -->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:background="@drawable/details_shape"
+           android:layout_below="@id/itemImage"
+           android:layout_marginTop="-15dp"
+           android:paddingVertical="20dp"
+           android:paddingHorizontal="20dp"
+           android:id="@+id/linLay"
+           >
+         <!--food name -->
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Food Name Here"
+                   android:fontFamily="@font/popains"
+                   android:textSize="16sp"
+                   android:maxLines="1"
+                   android:ellipsize="end"
+                   android:id="@+id/itemName"
+                   android:layout_weight="2"
+                   android:layout_gravity="center"
+                   android:padding="6dp"
+                   />
+               
+
+               
+           </LinearLayout>
+           
+       <!--food time-->
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginBottom="10dp"
+               >
+               <ImageView
+                   android:layout_width="22dp"
+                   android:layout_height="22dp"
+                   android:src="@drawable/clock_icon"
+                   android:layout_marginRight="10dp"
+
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="1 hr 33 mins"
+                   android:textStyle="bold"
+                   android:fontFamily="@font/popains"
+                   android:gravity="center"
+                   android:textSize="13sp"
+                   android:id="@+id/itemTime"
+
+                   />
+
+
+           </LinearLayout>
+
+
+           <!--food coking processs and ingredient-->
+
+           <com.google.android.material.tabs.TabLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/tabLay"
+
+               >
+
+              <com.google.android.material.tabs.TabItem
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Ingredients"
+                  />
+
+               <com.google.android.material.tabs.TabItem
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Steps"
+
+                   />
+
+
+
+           </com.google.android.material.tabs.TabLayout>
+
+
+      <!--framlayout for load fragment here-->
+
+
+                   <FrameLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:id="@+id/container"
+
+                       />
+
+
+
+
+
+
+
+
+       </LinearLayout>
+
+
+</RelativeLayout>
+
+
+</LinearLayout>
